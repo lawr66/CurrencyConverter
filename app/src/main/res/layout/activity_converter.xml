@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#909DE4"
+    tools:context="com.example.currencycconverter.Converter">
+
+  <Spinner
+      android:id="@+id/spnrfrom"
+      android:layout_width="356dp"
+      android:layout_height="48dp"
+      android:contentDescription="@string/from"
+      android:gravity="center_horizontal"
+      android:spinnerMode="dropdown"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.509"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.346" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:text="@string/Value_From"
+      app:layout_constraintBottom_toBottomOf="@+id/spnrfrom"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.464"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.411" />
+
+  <EditText
+      android:id="@+id/valueFrom"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:gravity="center_horizontal"
+      android:hint="@string/Value_From"
+      android:inputType="numberDecimal"
+      android:minHeight="48dp"
+      android:textColorHint="#757575"
+      app:layout_constraintBottom_toTopOf="@+id/spnrfrom"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.452"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView"
+      app:layout_constraintVertical_bias="0.41"
+      tools:ignore="DuplicateSpeakableTextCheck"
+      android:autofillHints=""
+      android:importantForAutofill="no" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="161dp"
+      android:layout_height="38dp"
+      android:gravity="center"
+      android:text="@string/to"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.475"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/spnrfrom"
+      app:layout_constraintVertical_bias="0.124" />
+
+  <Spinner
+      android:id="@+id/spnrto"
+      android:layout_width="356dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="28dp"
+      android:layout_marginTop="76dp"
+      android:contentDescription="@string/to"
+      android:gravity="center_horizontal"
+      android:spinnerMode="dropdown"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView2"
+      app:layout_constraintVertical_bias="0.004"
+      tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+  <TextView
+      android:id="@+id/textView3"
+      android:layout_width="284dp"
+      android:layout_height="52dp"
+      android:layout_marginTop="56dp"
+      android:gravity="center"
+      android:text="@string/Result"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/spnrto"
+      app:layout_constraintVertical_bias="0.203" />
+
+  <Button
+      android:id="@+id/btnConvert"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="CONVERT"
+      app:layout_constraintBottom_toTopOf="@+id/textView3"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/spnrto"
+      app:layout_constraintVertical_bias="0.459" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

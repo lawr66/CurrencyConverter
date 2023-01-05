@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="db_drop">DROP TABLE IF EXISTS</string>
+    <string name="abbr">Abbreviation</string>
+    <string name="fullname">Full name</string>
+    <string name="sell_value">Sell value</string>
+    <string name="buy_value">Buy value</string>
+    <string name="dt">Date and time</string>
+    <string name="Value_From">Value From</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="Result">Conversion result</string>
+    <string name="cnv_buy">Convert buy</string>
+    <string name="cnv_sell">Convert sell</string>
+    <string name="database">View database</string>
+    <string name="abt">About</string>
+    <string name="txtabt">Welcome to the Currency Converter App! \n This app uses data from a website to convert your desired amount from one currency to another. \n You can see the available currencies in the conversion screens. \n Version 1.2</string>
+    <string-array name="currenciues">
+        <item>EUR</item>
+        <item>USD</item>
+        <item>CHF</item>
+        <item>GBP</item>
+        <item>CAD</item>
+        <item>DKK</item>
+        <item>NOK </item>
+        <item>SEK</item>
+        <item>CZK</item>
+        <item>AUD</item>
+        <item>JPY</item>
+        <item>MDL</item>
+        <item>HUF</item>
+        <item>PLN</item>
+        <item>BGN</item>
+        <item>TRL</item>
+        <item>ILS</item>
+        <item>AED</item>
+        <item>RSD</item>
+        <item>HRK</item>
+        <item>RUB</item>
+        <item>CNY</item>
+        <item>UAH</item>
+        <item>RON</item>
+    </string-array>
+
+</resources>
